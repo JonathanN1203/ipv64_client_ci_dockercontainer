@@ -1,6 +1,8 @@
 name: Build docker file for PythonDiscordBot
 
 on:
+  schedule:
+  - cron: "0 0 * * MON"
   push:
     tags:
       - 'v*.*.*'
